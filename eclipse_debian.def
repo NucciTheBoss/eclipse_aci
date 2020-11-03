@@ -32,9 +32,6 @@ From: debian:9
     ## Graphical libraries needed to open on Roar
     apt-get install libcanberra-gtk-module libcanberra-gtk3-module -y
 
-    ## Install firefox-esr
-    apt-get install firefox-esr -y
-
     ## Install miniconda3
     if [ ! -d /usr/local/miniconda3 ]; then
         wget http://10.1.10.2/sh_installers/miniconda3/miniconda3-4.8.4-linux-x86_64.sh \
