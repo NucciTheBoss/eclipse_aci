@@ -1,0 +1,23 @@
+BootStrap: library
+From: nucci/default/eclipse:latest
+
+%post
+    apt-get update -y
+    export LC_ALL=en_US.utf8
+    export LANG=en_US.utf8
+    export ECLIPSE_HOME=/opt/eclipse   
+    export PATH=${ECLIPSE_HOME}:/usr/local/miniconda/bin:${PATH}
+    export LD_LIBRARY_PATH=/usr/local/miniconda/lib:${LD_LIBRARY_PATH}
+    export CPATH=/usr/local/miniconda/include:${CPATH}
+
+    #---------- Write your code here ----------#
+
+%environment
+    export LC_ALL=en_US.utf8
+    export LANG=en_US.utf8
+    export ECLIPSE_HOME=/opt/eclipse   
+    export PATH=${ECLIPSE_HOME}:/usr/local/miniconda/bin:${PATH}
+    export LD_LIBRARY_PATH=/usr/local/miniconda/lib:${LD_LIBRARY_PATH}
+    export CPATH=/usr/local/miniconda/include:${CPATH}
+
+    #---------- Write your code here ----------#
